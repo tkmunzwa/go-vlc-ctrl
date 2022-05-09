@@ -30,7 +30,7 @@ type Status struct {
 	Information   Information       `json:"information"`
 	Repeat        bool              `json:"repeat"`
 	SubtitleDelay float64           `json:"subtitledelay"`
-	Equalizer     Equalizer         `json:"equalizer"`
+	Equalizer     []Equalizer         `json:"equalizer"`
 }
 
 // Stats contains certain statistics of a VLC instance. A Stats variable is included in Status
