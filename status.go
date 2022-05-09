@@ -10,7 +10,7 @@ import (
 // status.go function.
 type Status struct {
 	// TODO: The Status structure is still a work in progress
-	Fullscreen    bool              `json:"fullscreen"`
+	Fullscreen    uint              `json:"fullscreen"`
 	Stats         Stats             `json:"stats"`
 	AspectRatio   string            `json:"aspectratio"`
 	AudioDelay    float64           `json:"audiodelay"`
