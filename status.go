@@ -15,10 +15,10 @@ type Status struct {
 	AspectRatio   string            `json:"aspectratio"`
 	AudioDelay    float64           `json:"audiodelay"`
 	APIVersion    uint              `json:"apiversion"`
-	CurrentPlID   uint              `json:"currentplid"`
+	CurrentPlID   int               `json:"currentplid"`
 	Time          uint              `json:"time"`
-	Volume        uint              `json:"volume"`
-	Length        uint              `json:"length"`
+	Volume        int               `json:"volume"`
+	Length        int               `json:"length"`
 	Random        bool              `json:"random"`
 	AudioFilters  map[string]string `json:"audiofilters"`
 	Rate          float64           `json:"rate"`
@@ -30,7 +30,7 @@ type Status struct {
 	Information   Information       `json:"information"`
 	Repeat        bool              `json:"repeat"`
 	SubtitleDelay float64           `json:"subtitledelay"`
-	Equalizer     []Equalizer         `json:"equalizer"`
+	Equalizer     []Equalizer       `json:"equalizer"`
 }
 
 // Stats contains certain statistics of a VLC instance. A Stats variable is included in Status
